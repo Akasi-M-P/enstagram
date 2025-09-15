@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>flow_focus</title>
+    <title>enstagram</title>
 
     <!-- FONT AWESOME -->
     <script
@@ -13,44 +13,25 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/homepage.css" />
   </head>
   <body>
-    <main class="main-container">
-      <!-- TASK STATUS SECTION -->
-      <section class="tasks-status">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </section>
-      <!--END OF TASK STATUS SECTION -->
-
-      <!-- PROGRESS OVERVIEW SETION -->
-      <section class="progress-overview">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </section>
-      <!--END OF PROGRESS OVERVIEW SETION -->
-
-      <!-- ADD TASK SECTION -->
-      <section class="add-task"></section>
-      <!-- END OF ADD TASK SECTION -->
-
-      <!-- SEARCH TASK SECTION  -->
-      <section class="search-task"></section>
-      <!-- END OF SEARCH TASK SECTION  -->
-
-      <!-- TASKS IN PROGRESS SECTION -->
-      <section class="tasks-in-progress"></section>
-      <!-- END OF TASKS IN PROGRESS SECTION -->
-
-      <!-- LIST OF TASKS SECTION -->
-      <section class="tasks-container"></section>
-      <!-- END OF LIST OF TASKS SECTION -->
-    </main>
-    <!-- JS -->
-    <script src="/js/index.js"></script>
+    <header>
+      <div class="profile-header">
+        <img src="/images/passport-picture.png" alt="" class="profile-img" />
+        <h1 class="app-name">enstagram</h1>
+      </div>
+      <div class="search-bar">
+        <form action="" method="get">
+          <span class="search-input">
+            <i class="fa-solid fa-magnifying-glass"></i
+            ><input type="text" name="" id="" placeholder="search"
+          /></span>
+        </form>
+      </div>
+      <hr />
+    </header>
+    <main class="post-list"></main>
+    <script src="/js/app.js"></script>
   </body>
 </html>
