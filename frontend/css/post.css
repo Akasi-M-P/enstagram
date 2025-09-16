@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .post-img-title {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .post-title-delete-edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 5px 10px;
+  }
+  .edit-delete {
+    display: flex;
+    gap: 30px;
+  }
+
+  .post-text {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .post-text p {
+    margin-bottom: 10px;
+    padding: 0px 10px;
+  }
+
+  .like-comment-share {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+}
+
+/* Small desktop/laptop */
+@media (max-width: 1024px) {
+}
+
+/* Desktop */
+@media (max-width: 1200px) {
+}
+
+/* Large desktop */
+@media (max-width: 1440px) {
+}
+
+/* Extra large desktop */
+@media (min-width: 1920px) {
+}

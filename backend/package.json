@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akasi-M-P/enstagram.git"
+  },
+  "author": "code_versa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akasi-M-P/enstagram/issues"
+  },
+  "homepage": "https://github.com/Akasi-M-P/enstagram#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}

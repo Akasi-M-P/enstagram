@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font-family);
+  scroll-behavior: smooth;
+  text-transform: capitalize;
+}
+
+body {
+  background-color: var(--background-color);
+  color: #333;
+}
+
+:root {
+  --primary-color: #222;
+  --background-color: #fff;
+  --app-name-font: "Epunda Slab", sans-serif;
+  --primary-font-family: "Montserrat", sans-serif;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  header {
+    position: sticky;
+    top: 0;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .app-name {
+    text-transform: lowercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding-right: 15px;
+    font-family: var(--app-name-font);
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  form input {
+    width: 80%;
+    font-size: 14px;
+    padding: 8px;
+    margin: auto;
+    border: none;
+    outline: none;
+    background: none;
+  }
+
+  .search-input {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+
+  .post-img-title {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .post-title-delete-edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 5px 10px;
+  }
+  .edit-delete {
+    display: flex;
+    gap: 30px;
+  }
+
+  .post-text {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .post-text p {
+    margin-bottom: 10px;
+    padding: 0px 10px;
+  }
+
+  .like-comment-share {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .home-img-title {
+    display: flex;
+    align-items: center;
+  }
+
+  .home-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .author-info p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+}
+
+/* Small desktop/laptop */
+@media (max-width: 1024px) {
+}
+
+/* Desktop */
+@media (max-width: 1200px) {
+}
+
+/* Large desktop */
+@media (max-width: 1440px) {
+}
+
+/* Extra large desktop */
+@media (min-width: 1920px) {
+}
