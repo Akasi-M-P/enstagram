@@ -1,0 +1,102 @@
+[
+  {
+    "_id": "66f1a1d5b0190b214360dc001",
+    "name": "Jonas Schmedtmann",
+    "email": "admin@natours.io",
+    "role": "admin",
+    "occupation": "Software Architect",
+    "active": true,
+    "photo": "user-1.jpg",
+    "password": "$2a$12$Q0grHjH9PXc6SxivC8m12.2mZJ9BbKcgFpwSG4Y1ZEII8HJVzWeyS"
+  },
+  {
+    "_id": "66f1a1d5b0190b214360dc002",
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "role": "user",
+    "occupation": "Product Manager",
+    "active": true,
+    "photo": "user-2.jpg",
+    "password": "$2a$12$k3wqJ7h8mTj3U8yXgF9Jr9pT2n6LkY5gKm8Bq4ZyY6D1HhNvZ3Yta"
+  },
+  {
+    "_id": "66f1a1d5b0190b214360dc003",
+    "name": "Michael Smith",
+    "email": "michael.smith@example.com",
+    "role": "user",
+    "occupation": "UX Designer",
+    "active": true,
+    "photo": "user-3.jpg",
+    "password": "$2a$12$D9hRjJ1lLzF5HsPpR4MZaPqN8mTsZc3cQy8F1ZzU7W9GvEwYjHnVy"
+  },
+  {
+    "_id": "66f1a1d5b0190b214360dc004",
+    "name": "Sophia Brown",
+    "email": "sophia.brown@example.com",
+    "role": "user",
+    "occupation": "AI Researcher",
+    "active": true,
+    "photo": "user-4.jpg",
+    "password": "$2a$12$M4dSgX8pQwY9VjK1Zr3Tn1n5Fj3WkE6uPz7HgL4cV5RrXbTtL2ZQm"
+  },
+  {
+    "_id": "66f1a1d5b0190b214360dc005",
+    "name": "David Kim",
+    "email": "david.kim@example.com",
+    "role": "user",
+    "occupation": "Cybersecurity Analyst",
+    "active": true,
+    "photo": "user-5.jpg",
+    "password": "$2a$12$N7qJkV9wLxH4MsB1Fz2Pw3kGd4TnE6oKx8FgJ6rVn7BzYpWmH5CtP"
+  },
+  {
+    "_id": "66f1a1d5b0190b214360dc006",
+    "name": "Emma Davis",
+    "email": "emma.davis@example.com",
+    "role": "user",
+    "occupation": "Mobile Developer",
+    "active": true,
+    "photo": "user-6.jpg",
+    "password": "$2a$12$H2rBnK3yPxU7LjF9Gz6Wv9dQy2RkU5tNs1VjP3mXk6AaLqGfM4ZwC"
+  },
+  {
+    "_id": "66f1a1d5b0190b214360dc007",
+    "name": "Olivia Taylor",
+    "email": "olivia.taylor@example.com",
+    "role": "user",
+    "occupation": "Healthcare Consultant",
+    "active": true,
+    "photo": "user-7.jpg",
+    "password": "$2a$12$R5tVhM2nKxL8QdJ4Bf9Xp7vAq6FzG1yWn3HrP2lZt7UsXqCjD6LpW"
+  },
+  {
+    "_id": "66f1a1d5b0190b214360dc008",
+    "name": "Ethan Thomas",
+    "email": "ethan.thomas@example.com",
+    "role": "user",
+    "occupation": "DevOps Engineer",
+    "active": true,
+    "photo": "user-8.jpg",
+    "password": "$2a$12$L8nHqW6dFxM2RtY7Pj4Vk3bDz5SnB2uXg1MrF9yQh7KtJwGdN5ZpY"
+  },
+  {
+    "_id": "66f1a1d5b0190b214360dc009",
+    "name": "Grace Allen",
+    "email": "grace.allen@example.com",
+    "role": "user",
+    "occupation": "Sustainability Analyst",
+    "active": true,
+    "photo": "user-9.jpg",
+    "password": "$2a$12$P9wKfR3jSzH1XbT6Gd8Qv4nKy3UmC5oLr2NgY1aFj5VhDqSmU7XtB"
+  },
+  {
+    "_id": "66f1a1d5b0190b214360dc010",
+    "name": "Noah Johnson",
+    "email": "noah.johnson@example.com",
+    "role": "user",
+    "occupation": "Security Analyst",
+    "active": true,
+    "photo": "user-10.jpg",
+    "password": "$2a$12$J6hPtV8xLqK3BdZ2Ff4Mw9rCz7GnT1vXk8WfP5qRs2VyDbNhG1YhE"
+  }
+]
