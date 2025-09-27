@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "title": "🌍 Embracing Remote Work",
+    "content": "With the rise of remote work, professionals worldwide are adapting to a new way of life. 🌐 Flexibility, collaboration tools, and mental health awareness are shaping this transformation. How do you structure your day when working from home?",
+    "time": "2025-09-25T10:15:00Z",
+    "likes": {
+      "count": 3,
+      "users": [
+        { "id": 101, "name": "John Doe", "occupation": "Software Engineer" },
+        { "id": 102, "name": "Alice Johnson", "occupation": "Product Manager" },
+        { "id": 103, "name": "Michael Smith", "occupation": "UX Designer" }
+      ]
+    },
+    "comments": {
+      "count": 2,
+      "list": [
+        {
+          "user": {
+            "id": 104,
+            "name": "Sarah Lee",
+            "occupation": "Data Scientist"
+          },
+          "text": "Great insights! I usually set a strict morning routine. ☕💻",
+          "time": "2025-09-25T11:00:00Z"
+        },
+        {
+          "user": {
+            "id": 105,
+            "name": "David Kim",
+            "occupation": "Cybersecurity Analyst"
+          },
+          "text": "Remote work has improved my productivity by 40%! 🔐",
+          "time": "2025-09-25T11:30:00Z"
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "title": "💡 The Power of AI in Business",
+    "content": "Artificial Intelligence is reshaping industries, from healthcare to finance. 🤖 Companies are using AI to automate tasks, improve decision-making, and create personalized customer experiences. The challenge remains ensuring ethics and transparency.",
+    "time": "2025-09-24T09:20:00Z",
+    "likes": {
+      "count": 4,
+      "users": [
+        {
+          "id": 106,
+          "name": "Rachel Green",
+          "occupation": "Marketing Specialist"
+        },
+        { "id": 107, "name": "Chris Evans", "occupation": "Financial Analyst" },
+        { "id": 108, "name": "Sophia Brown", "occupation": "AI Researcher" },
+        { "id": 109, "name": "James Wilson", "occupation": "Entrepreneur" }
+      ]
+    },
+    "comments": {
+      "count": 2,
+      "list": [
+        {
+          "user": {
+            "id": 110,
+            "name": "Olivia Taylor",
+            "occupation": "Healthcare Consultant"
+          },
+          "text": "AI is saving lives in hospitals already. 🏥",
+          "time": "2025-09-24T10:00:00Z"
+        },
+        {
+          "user": {
+            "id": 111,
+            "name": "Daniel White",
+            "occupation": "Blockchain Developer"
+          },
+          "text": "We need to balance AI innovation with ethics. ⚖️",
+          "time": "2025-09-24T10:15:00Z"
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "title": "📚 Lifelong Learning in Tech",
+    "content": "Technology evolves so fast that constant learning is no longer optional. Developers, IT specialists, and business leaders must continuously upskill to remain competitive. 🌱 Certifications, online courses, and hands-on projects make the difference.",
+    "time": "2025-09-23T14:40:00Z",
+    "likes": {
+      "count": 2,
+      "users": [
+        { "id": 113, "name": "William Scott", "occupation": "DevOps Engineer" },
+        { "id": 114, "name": "Sophia Martinez", "occupation": "IT Trainer" }
+      ]
+    },
+    "comments": {
+      "count": 2,
+      "list": [
+        {
+          "user": {
+            "id": 115,
+            "name": "Liam Brown",
+            "occupation": "Cloud Architect"
+          },
+          "text": "I dedicate at least 5 hours weekly to new certifications. 📖",
+          "time": "2025-09-23T15:10:00Z"
+        },
+        {
+          "user": {
+            "id": 116,
+            "name": "Isabella Davis",
+            "occupation": "Frontend Developer"
+          },
+          "text": "Totally agree! I’m learning React and loving it. ⚛️",
+          "time": "2025-09-23T15:25:00Z"
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "title": "🌱 Sustainability in Tech",
+    "content": "Sustainability has become a global priority, and tech companies are taking responsibility by adopting green practices. 🌍 From eco-friendly data centers to energy-efficient devices, the industry is making an impact. Are we doing enough?",
+    "time": "2025-09-22T08:00:00Z",
+    "likes": {
+      "count": 3,
+      "users": [
+        {
+          "id": 117,
+          "name": "Ethan Walker",
+          "occupation": "Environmental Scientist"
+        },
+        {
+          "id": 118,
+          "name": "Mia Anderson",
+          "occupation": "Software Engineer"
+        },
+        {
+          "id": 119,
+          "name": "Lucas Taylor",
+          "occupation": "Sustainability Consultant"
+        }
+      ]
+    },
+    "comments": {
+      "count": 2,
+      "list": [
+        {
+          "user": {
+            "id": 120,
+            "name": "Sophia Miller",
+            "occupation": "Climate Researcher"
+          },
+          "text": "Green data centers are a step in the right direction. 🌿",
+          "time": "2025-09-22T09:00:00Z"
+        },
+        {
+          "user": {
+            "id": 121,
+            "name": "Jacob Harris",
+            "occupation": "IT Specialist"
+          },
+          "text": "We should also push for renewable energy adoption. ⚡",
+          "time": "2025-09-22T09:30:00Z"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "title": "🧑‍💻 Cybersecurity Awareness",
+    "content": "As cyber threats grow more sophisticated, awareness is critical. 🔐 Phishing, ransomware, and social engineering attacks are rising daily. Companies must invest in training employees to recognize and prevent these threats.",
+    "time": "2025-09-21T13:10:00Z",
+    "likes": {
+      "count": 2,
+      "users": [
+        { "id": 122, "name": "Olivia White", "occupation": "Network Engineer" },
+        { "id": 123, "name": "Daniel Clark", "occupation": "IT Auditor" }
+      ]
+    },
+    "comments": {
+      "count": 2,
+      "list": [
+        {
+          "user": {
+            "id": 124,
+            "name": "Emma Rodriguez",
+            "occupation": "Security Consultant"
+          },
+          "text": "Regular training is the best defense. 🛡️",
+          "time": "2025-09-21T14:00:00Z"
+        },
+        {
+          "user": {
+            "id": 125,
+            "name": "James Allen",
+            "occupation": "Chief Information Security Officer"
+          },
+          "text": "I’ve seen phishing simulations reduce incidents by 60%! 📉",
+          "time": "2025-09-21T14:25:00Z"
+        }
+      ]
+    }
+  }
+]
