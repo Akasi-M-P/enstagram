@@ -6,8 +6,6 @@ const users = JSON.parse(
   fs.readFileSync(`${__dirname}/../dev-data/data/users.json`)
 );
 
-console.log(users);
-
 // helper to format "time ago"
 function getTimeAgo(createdAt) {
   const diffInSeconds = Math.floor((Date.now() - createdAt) / 1000);
@@ -23,12 +21,11 @@ exports.getAllUsers = (req, res) => {
   res.json({ success: true, data: users });
 };
 
-// GET SINGLE POST FROM API
+// GET SINGLE USER FROM API
 exports.getUser = (req, res) => {
   const userId = +req.params.id;
 
   const user = users.find((user) => user.id === userId);
-  console.log(user);
 
   if (!user) {
     return res.status(404).json({ success: false, error: "user not found" });
