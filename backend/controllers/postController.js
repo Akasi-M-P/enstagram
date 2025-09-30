@@ -32,19 +32,35 @@ exports.getPost = (req, res) => {
 };
 
 // ADD A POST TO THE API
-exports.createPost = (req, res) => {
+exports.createPost = async (req, res) => {
   const createdAt = Date.now();
 
-  const post = {
-    id: posts.length + 1,
-    title: req.body.title,
-    content: req.body.content,
-    time: getTimeAgo(createdAt),
-  };
+  // const post = {
+  //   id: posts.length + 1,
+  //   title: req.body.title,
+  //   content: req.body.content,
+  //   time: getTimeAgo(createdAt),
+  // };
 
-  posts.push(post);
+  // posts.push(post);
 
-  res.json({ success: true, data: post });
+  // res.json({ success: true, data: post });
+  try {
+    const newPost = await Post.create(req.body);
+    let time = getTimeAgo(createdAt);
+    newPost.time = time;
+    res.status(201).json({
+      status: "success",
+      data: {
+        post: newPost,
+      },
+    });
+  } catch (error) {
+    res.status(400).json({
+      status: "fail",
+      message: error.message,
+    });
+  }
 };
 
 // UPDATE A POST

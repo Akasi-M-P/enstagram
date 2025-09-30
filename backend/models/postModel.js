@@ -11,6 +11,7 @@ const postSchema = mongoose.Schema({
     type: String,
     required: [true, "A post must have content"],
   },
+  time: String,
 });
 
 const Post = mongoose.model("Post", postSchema);
