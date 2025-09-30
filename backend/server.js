@@ -35,6 +35,16 @@ const postSchema = mongoose.Schema({
 
 const Post = mongoose.model("Post", postSchema);
 
+const testPost = new Post({
+  title: "The revolution of AI",
+  content: "How can be used to change the future of our world",
+});
+
+testPost
+  .save()
+  .then((doc) => console.log(doc))
+  .catch((err) => console.log(err));
+
 app.listen(port, () => {
   console.log(`Server listening on port ${port}...`);
 });
