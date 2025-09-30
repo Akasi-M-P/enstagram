@@ -17,7 +17,8 @@ if (process.env.NODE_ENV === "development") {
 app.use(express.json());
 
 // STATIC FILES URL DIRECTORY
-app.use(express.static(path.join(__dirname, "..", "frontend")));
+app.use(express.static(path.join(__dirname, "..", "frontend", "html")));
+app.use(express.static(path.join(__dirname, "..", "frontend", "css")));
 
 // POST ROUTE USED
 app.use("/api/v1/posts", postRoute);
