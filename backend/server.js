@@ -20,31 +20,6 @@ mongoose
   .then(() => console.log("DB Connected Successfully"))
   .then((err) => console.log(err));
 
-// CREATE A POST MODEL USING MONGOOSE
-const postSchema = mongoose.Schema({
-  title: {
-    type: String,
-    required: [true, "A post must have a title"],
-    unique: true,
-  },
-  content: {
-    type: String,
-    required: [true, "A post must have content"],
-  },
-});
-
-const Post = mongoose.model("Post", postSchema);
-
-const testPost = new Post({
-  title: "The revolution of AI",
-  content: "How can be used to change the future of our world",
-});
-
-testPost
-  .save()
-  .then((doc) => console.log(doc))
-  .catch((err) => console.log(err));
-
 app.listen(port, () => {
   console.log(`Server listening on port ${port}...`);
 });

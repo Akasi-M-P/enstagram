@@ -1,11 +1,7 @@
 // CORE MODULES
-const fs = require("fs");
 
-//READ POSTS FROM FILE
-const posts = JSON.parse(
-  fs.readFileSync(`${__dirname}/../dev-data/data/posts.json`)
-);
-
+// CUSTOM MODULES
+const Post = require("./../models/postModel");
 // helper to format "time ago"
 function getTimeAgo(createdAt) {
   const diffInSeconds = Math.floor((Date.now() - createdAt) / 1000);
