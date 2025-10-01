@@ -73,35 +73,38 @@ exports.createPost = async (req, res) => {
 };
 
 // UPDATE A POST
-exports.updatePost = (req, res) => {
-  const postId = +req.params.id;
-
-  const post = posts.find((post) => post.id === postId);
-
-  if (!post) {
-    return res.status(404).json({ success: false, error: "Post not found" });
+exports.updatePost = async (req, res) => {
+  try {
+    const post = await Post.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+      runValidators: true,
+    });
+    res.status(200).json({
+      status: "success",
+      data: {
+        post,
+      },
+    });
+  } catch (error) {
+    res.status(400).json({
+      status: "fail",
+      message: error.message,
+    });
   }
-
-  // Update post
-  post.title = req.body.title || post.title;
-  post.content = req.body.content || post.content;
-
-  res.json({ success: true, data: post });
 };
 
 // DELETE A POST FROM THE API
-exports.deletePost = (req, res) => {
-  const postId = +req.params.id;
-
-  const post = posts.find((post) => post.id === postId);
-
-  if (!post) {
-    return res.status(404).json({ success: false, error: "Post not found" });
+exports.deletePost = async (req, res) => {
+  try {
+    await Post.findByIdAndDelete(req.params.id);
+    res.status(204).json({
+      status: "success",
+      data: null,
+    });
+  } catch (error) {
+    res.status(404).json({
+      status: "fail",
+      message: error.message,
+    });
   }
-
-  const index = posts.indexOf(post);
-
-  posts.splice(index, 1);
-
-  res.json({ success: true, data: {} });
 };
