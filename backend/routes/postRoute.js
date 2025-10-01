@@ -16,7 +16,7 @@ router
 router
   .route("/:id")
   .get(postController.getPost)
-  .put(postController.updatePost)
+  .patch(postController.updatePost)
   .delete(postController.deletePost);
 
 module.exports = router;

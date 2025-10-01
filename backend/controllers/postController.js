@@ -13,38 +13,47 @@ function getTimeAgo(createdAt) {
 }
 
 // GET ALL POST FROM API
-exports.getAllPosts = (req, res) => {
-  res.json({ success: true, data: posts });
+exports.getAllPosts = async (req, res) => {
+  try {
+    const posts = await Post.find();
+    res.status(200).json({
+      results: posts.length,
+      success: true,
+      data: {
+        posts,
+      },
+    });
+  } catch (error) {
+    res.status(400).json({
+      status: "fail",
+      message: error.message,
+    });
+  }
 };
 
 // GET SINGLE POST FROM API
-exports.getPost = (req, res) => {
-  const postId = +req.params.id;
+exports.getPost = async (req, res) => {
+  try {
+    const post = await Post.findById(req.params.id);
 
-  const post = posts.find((post) => post.id === postId);
-  console.log(post);
-
-  if (!post) {
-    return res.status(404).json({ success: false, error: "Post not found" });
+    res.status(200).json({
+      status: "success",
+      data: {
+        post,
+      },
+    });
+  } catch (error) {
+    res.status(400).json({
+      status: "fail",
+      message: error.message,
+    });
   }
-
-  res.json({ success: true, data: post });
 };
 
 // ADD A POST TO THE API
 exports.createPost = async (req, res) => {
   const createdAt = Date.now();
 
-  // const post = {
-  //   id: posts.length + 1,
-  //   title: req.body.title,
-  //   content: req.body.content,
-  //   time: getTimeAgo(createdAt),
-  // };
-
-  // posts.push(post);
-
-  // res.json({ success: true, data: post });
   try {
     const newPost = await Post.create(req.body);
     let time = getTimeAgo(createdAt);
