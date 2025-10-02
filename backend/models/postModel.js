@@ -6,12 +6,42 @@ const postSchema = mongoose.Schema({
     type: String,
     required: [true, "A post must have a title"],
     unique: true,
+    trim: true,
   },
   content: {
     type: String,
     required: [true, "A post must have content"],
+    trim: true,
   },
-  time: String,
+  likes: {
+    count: { type: Number, default: 0 },
+    likedUsers: [
+      {
+        name: String,
+        occupation: String,
+      },
+    ],
+  },
+  comments: {
+    count: { type: Number, default: 0 },
+    commentUsers: [
+      {
+        user: {
+          name: String,
+          occupation: String,
+          text: {
+            type: String,
+            trim: true,
+          },
+        },
+      },
+    ],
+  },
+  image: [String],
+  date: {
+    type: Date,
+    default: Date.now(),
+  },
 });
 
 const Post = mongoose.model("Post", postSchema);

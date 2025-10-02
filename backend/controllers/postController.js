@@ -2,15 +2,6 @@
 
 // CUSTOM MODULES
 const Post = require("./../models/postModel");
-// helper to format "time ago"
-function getTimeAgo(createdAt) {
-  const diffInSeconds = Math.floor((Date.now() - createdAt) / 1000);
-
-  if (diffInSeconds < 60) return "just now";
-  if (diffInSeconds < 3600) return Math.floor(diffInSeconds / 60) + " min ago";
-  if (diffInSeconds < 86400) return Math.floor(diffInSeconds / 3600) + "h ago";
-  return Math.floor(diffInSeconds / 86400) + " day(s) ago";
-}
 
 // GET ALL POST FROM API
 exports.getAllPosts = async (req, res) => {
@@ -52,12 +43,8 @@ exports.getPost = async (req, res) => {
 
 // ADD A POST TO THE API
 exports.createPost = async (req, res) => {
-  const createdAt = Date.now();
-
   try {
     const newPost = await Post.create(req.body);
-    let time = getTimeAgo(createdAt);
-    newPost.time = time;
     res.status(201).json({
       status: "success",
       data: {

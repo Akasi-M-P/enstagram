@@ -1,12 +1,10 @@
 [
   {
-    "id": 1,
     "title": "🌍 Embracing Remote Work",
     "content": "With the rise of remote work, professionals worldwide are adapting to a new way of life. 🌐 Flexibility, collaboration tools, and mental health awareness are shaping this transformation. Many companies are also considering hybrid models where employees split their time between home and the office.",
-    "time": "2h ago",
     "likes": {
       "count": 3,
-      "users": [
+      "likedUsers": [
         { "id": 101, "name": "John Doe", "occupation": "Software Engineer" },
         { "id": 102, "name": "Alice Johnson", "occupation": "Product Manager" },
         { "id": 103, "name": "Michael Smith", "occupation": "UX Designer" }
@@ -14,15 +12,14 @@
     },
     "comments": {
       "count": 2,
-      "list": [
+      "commentUsers": [
         {
           "user": {
             "id": 104,
             "name": "Sarah Lee",
-            "occupation": "Data Scientist"
-          },
-          "text": "Great insights! I usually set a strict morning routine. ☕💻",
-          "time": "1h ago"
+            "occupation": "Data Scientist",
+            "text": "Great insights! I usually set a strict morning routine. ☕💻"
+          }
         },
         {
           "user": {
@@ -30,8 +27,7 @@
             "name": "David Kim",
             "occupation": "Cybersecurity Analyst"
           },
-          "text": "Remote work has improved my productivity by 40%! 🔐",
-          "time": "1h ago"
+          "text": "Remote work has improved my productivity by 40%! 🔐"
         }
       ]
     }
