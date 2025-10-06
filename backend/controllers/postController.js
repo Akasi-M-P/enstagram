@@ -1,12 +1,35 @@
-// CORE MODULES
-
 // CUSTOM MODULES
 const Post = require("./../models/postModel");
 
 // GET ALL POST FROM API
 exports.getAllPosts = async (req, res) => {
   try {
-    const posts = await Post.find();
+    console.log(req.query);
+    // GET A COPY OF THE QUERY OBJECT AND ASSIGN IT TO A VARIABLE
+    const queryObj = { ...req.query };
+
+    // GROUP QUERY FIELDS INTO AN ARRAY AND ASSIGN THEM TO A VARIABLE
+    const excludeFields = ["page", "sort", "limit", "fields"];
+
+    // DELETE EACH QUERY FIELD IN THE EXCLUDE FIELDS ARRAY FROM THE QUERY OBJECT
+    excludeFields.forEach((el) => delete queryObj[el]);
+
+    // ADD >=,>,<=,< TO QUERY FILTERING
+    let queryStr = JSON.stringify(queryObj);
+    queryStr = queryStr.replace(/\b(gte|gt|lte|lt)\b/g, (match) => `$${match}`);
+
+    let query = Post.find(JSON.parse(queryStr));
+
+    // FILTER QUERY BY SORTING
+    if (req.query.sort) {
+      const sortBy = req.query.sort.split(",").join(" ");
+
+      query = query.sort(sortBy);
+    } else {
+      query = query.sort("-createdAt");
+    }
+
+    const posts = await query;
     res.status(200).json({
       results: posts.length,
       success: true,
