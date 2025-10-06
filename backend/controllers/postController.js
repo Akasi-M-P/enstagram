@@ -37,6 +37,18 @@ exports.getAllPosts = async (req, res) => {
       query = query.select("-__v");
     }
 
+    // IMPLEMENT PAGINATION IN THE API TO ENSURE THAT A CERTAIN NUMBER OF DOCS ARE DISPLAYED ON EACH PAGE
+    const page = req.query.page * 1 || 1;
+    const limit = req.query.limit * 1 || 100;
+    const skip = (page - 1) * limit;
+
+    query = query.skip(skip).limit(limit);
+
+    if (req.query.page) {
+      const numPosts = await Post.countDocuments();
+      if (skip > numPosts) throw new Error("This page does not exist");
+    }
+
     const posts = await query;
     res.status(200).json({
       results: posts.length,
