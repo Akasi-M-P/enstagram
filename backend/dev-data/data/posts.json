@@ -30,7 +30,15 @@
           "text": "Remote work has improved my productivity by 40%! 🔐"
         }
       ]
-    }
+    },
+    "tags": [
+      "remote work",
+      "productivity",
+      "mental health",
+      "hybrid work",
+      "collaboration"
+    ],
+    "image": "https://images.unsplash.com/photo-1587614382346-4ec70e388b28?w=1200&q=80"
   },
   {
     "id": 2,
@@ -72,7 +80,15 @@
           "time": "22h ago"
         }
       ]
-    }
+    },
+    "tags": [
+      "artificial intelligence",
+      "automation",
+      "business",
+      "ethics",
+      "data bias"
+    ],
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&q=80"
   },
   {
     "id": 3,
@@ -115,7 +131,15 @@
           "time": "1 day ago"
         }
       ]
-    }
+    },
+    "tags": [
+      "mobile security",
+      "encryption",
+      "data protection",
+      "secure coding",
+      "cybersecurity"
+    ],
+    "image": "https://images.unsplash.com/photo-1605902711622-cfb43c4437d7?w=1200&q=80"
   },
   {
     "id": 4,
@@ -167,7 +191,15 @@
           "time": "2 days ago"
         }
       ]
-    }
+    },
+    "tags": [
+      "renewable energy",
+      "technology",
+      "IoT",
+      "smart grids",
+      "clean energy"
+    ],
+    "image": "https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=1200&q=80"
   },
   {
     "id": 5,
@@ -208,6 +240,14 @@
           "time": "3 days ago"
         }
       ]
-    }
+    },
+    "tags": [
+      "mental health",
+      "tech industry",
+      "well-being",
+      "work-life balance",
+      "self-care"
+    ],
+    "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&q=80"
   }
 ]

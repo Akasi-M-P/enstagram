@@ -42,6 +42,7 @@ const postSchema = mongoose.Schema({
     type: Date,
     default: Date.now(),
   },
+  tags: [String],
 });
 
 const Post = mongoose.model("Post", postSchema);
